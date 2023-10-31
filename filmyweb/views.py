@@ -6,4 +6,5 @@ from filmyweb.models import Film
 
 def test_response(request):
     films = Film.objects.all()
+    test = 'test'
     return render(request, 'filmyweb/starting.html', {'films': films})
